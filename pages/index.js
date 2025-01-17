@@ -5,7 +5,7 @@ import { Progress } from '@/components/ui/progress';
 import { Lock, Unlock, CheckCircle, XCircle } from 'lucide-react';
 
 const ComplianceDemo = () => {
-  const [mode, setMode] = useState('select'); // select, traditional, adaptive
+  const [mode, setMode] = useState('select'); 
   const [progress, setProgress] = useState(0);
   const [timer, setTimer] = useState(null);
   const [question, setQuestion] = useState(null);
@@ -14,7 +14,6 @@ const ComplianceDemo = () => {
   const startTraditional = () => {
     setMode('traditional');
     setProgress(0);
-    // Simulate locked progress
     const interval = setInterval(() => {
       setProgress(prev => {
         if (prev >= 100) {

@@ -1,3 +1,13 @@
 module.exports = {
-    reactStrictMode: true,
+    reactStrictMode: true
+  }
+  
+  // File: jsconfig.json
+  {
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"]
+      }
+    }
   }
